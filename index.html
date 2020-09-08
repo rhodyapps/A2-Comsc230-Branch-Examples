@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <!--
-    This branch part7-css continues building the css styling in the 
-    css/css.style file.
+    This branch part8-css continues building the css styling in the 
+    css/css.style file. The background image for the showcase is added here.
    
 
-   Note: This branch shows the addition of the .highlight and .current css and
-   the addition of the class "highlight" and the <span> tag in index.html to highlight the company name.
-     Video location 33:15 thru 34:03
+   Note: This branch shows the addition of the css and background image
+    for the showcase. Note how he uses the path'../img/showcase.jpg' 
+    to tell the browser where to find the background image. 
+
+    Also note the use of the 'no repeat' directive to ensure that the browser
+    renders the background image once.
+    in the showcase css, he also tells teh browser to position the background image x-axis (0 -400px): 
+    background:url('../img/showcase.jpg') no-repeat 0 -400px;
+
+     Video location 34:03 thru 35:27
 -->
 <html>
   <head>
@@ -26,7 +33,7 @@
      </div>	
      <nav>
          <ul>
-             <li><a href="index.html">Home</a></li>
+             <li class="current"><a href="index.html">Home</a></li>
              <li><a href="about.html">About</a></li>
              <li><a href="services.html">Services</a></li>
          </ul>
